@@ -1,0 +1,60 @@
+.Titulo{
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.lorem{
+    padding-right: 60%;
+}
+.Background{
+    background-color: lightgreen;
+    border-radius: 2cqmin;
+}
+.elem2 :nth-child(2n){
+    color: rgb(233, 11, 11);
+}
+
+.cuadro{
+    background-color: blueviolet;
+    width: 20vw;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 75%;
+    color: aliceblue;
+    border: solid 4px black;
+}
+
+ol>li:nth-child(3n){
+    background-color: chartreuse;
+    list-style: none;
+}
+
+.cuad1{
+    background-color: rgb(3, 3, 3);
+    width: 55vw;
+    padding: 50px;
+    margin: 0 auto;
+    border-radius: 2cqmin;
+    border-style: double;
+}
+
+.cuad2{
+    background-color: burlywood;
+    width: 45vw;
+    padding: 50px;
+    margin: 0 auto;
+    border-radius: 2cqmin;
+    border-style: double;
+}
+.cuad3{
+    background-color: cadetblue;
+    width: 35vw;
+    padding: 50px;
+    margin: 0 auto;
+    border-radius: 2cqmin;
+    border-style: double;
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    :root{
+      --widhtPadre: 400px;
+    }
+    
+    .container{
+        width: var(--widhtPadre);
+        height: 500px;
+    
+        background-color: blue;
+    }
+    .cuadrito{
+        width: 50px;
+        height: 50px;
+      /*  transition: all ease-in-out 500ms;
+        background-color: greenyellow;*/
+        background-color:  greenyellow;
+        animation: cuadritovueltas 1s linear forwards infinite alternate;
+        /*animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;*/
+        animation-delay: 1s;
+    }
+    .container:hover .cuadrito{
+        /*background-color: red;
+        transform: translate(calc(var(--widhtPadre)));*/
+        animation-play-state: paused;
+    
+        /*animation: cuadritovueltas 1s linear forwards infinite alternate;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;*/
+        animation-delay: 1s; 
+    }
+
+    @keyframes cuadritovueltas{
+        33%{
+           transform: translateY(450px);
+        }
+        50%{
+            background-color: rgb(197, 31, 31)
+        }
+        66%{
+            transform: translate(calc(var(--widhtPadre) - 50px), 450px);
+    
+        }
+        100%{
+            transform: 
+                translate(calc(var(--widhtPadre) - 50px))
+                scale(2)
+                rotate(0.25turn);
+
+                background-color: tomato;
+            }
+         }
+    </style>
+<body>
+<div class="container">
+    <div class="cuadrito"></div>
+    
+</div>
+
+
+</body>
+</html>

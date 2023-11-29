@@ -1,0 +1,9 @@
+.cuadro{
+    background-color: blueviolet;
+    width: 20vw;
+    padding: 20px;
+    margin: 10px;
+    margin-left: 75%;
+    color: aliceblue;
+    border: solid 4px black;
+}

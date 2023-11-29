@@ -1,0 +1,4 @@
+ol>li:nth-child(3n){
+    background-color: chartreuse;
+    list-style: none;
+}

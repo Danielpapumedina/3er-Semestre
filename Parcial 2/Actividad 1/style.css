@@ -1,0 +1,190 @@
+.Titulo{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem
+}
+:root{
+    --widhtPadre: 600px;
+  }
+  .containerflex{
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .container1{
+      padding: 50px;
+      width: var(--widhtPadre);
+      height: 400px;
+      border: solid black 5px;
+      background-color: white;
+      text-align: center;
+  }
+  .container2{
+      margin-top: 10rem;     
+      width: var(--widhtPadre);
+      height: 400px;
+      border: solid black 5px;
+      background-color: white;
+  }
+  .container3{
+      margin-top: 10rem;  
+      width: var(--widhtPadre);
+      height: 400px;
+      border: solid black 5px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .container4{
+      margin-top: 10rem;  
+      width: var(--widhtPadre);
+      height: 400px;
+      border: solid black 5px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .container5{
+      margin-top: 10rem;  
+      width: var(--widhtPadre);
+      height: 400px;
+      border: solid black 5px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+  }
+  .animacion5:hover{
+   
+    animation: animacion5 .5s ease-out;
+    animation-iteration-count: 1 ; 
+    animation-fill-mode: forwards;
+}
+  .container6{
+      margin-top: 10rem;  
+      width: var(--widhtPadre);
+      height: 400px;
+      border: solid black 5px;
+      background-color: white;
+  }
+.animacion1{
+    animation: animacion1 2s linear;
+    text-align: center;
+  }
+  .animacion1  h3{
+      animation-delay: 1s;
+    animation: animacion1 2s linear;
+    text-align: center;
+  }
+  .animacion1  h2{
+    animation-delay: 2s;
+  animation: animacion1 3s linear;
+  text-align: center;
+}
+.animacion2{
+    width: 50px;
+    height: 50px;
+    border: blue;
+    background-color: aqua;
+    animation: animacion2 3s linear infinite;
+}
+.animacion3{
+    width: 60px;
+    height: 40px;
+    background-color: orangered;
+    transition: all 1s ;
+    transform: scale(0);
+    transition-timing-function: cubic-bezier(0.42, 0, 0.63, 1.48);
+}
+.container3:hover .animacion3{
+    transform: scale(10);
+}
+.animacion4{
+    width: 65px;
+    height: 65px;
+    background-color: blueviolet;
+    border-radius: 35px;
+    transform-origin: right;
+    animation: animacion4 1s linear infinite;
+}
+.animacion5{
+    width: 150px;
+    height: 80px;
+    border: solid   5px;
+    background-color: gray;
+    text-align: center;
+}
+.animacion6{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    animation: animacion6 3s linear infinite;
+    
+}
+@keyframes animacion1{
+    0%{
+       transform: translateY(150px);
+       opacity: 0%;
+    }
+    100%{
+        transform: (calc(400px - 50px) ,30px);
+        opacity: 100%;
+    }
+}
+@keyframes animacion2{
+    0%{
+       transform: translateY(200px);
+    }
+    100%{
+        transform: translate(calc((600px) - 50px), 200px) rotate(0.65turn);
+        
+       
+    }
+}
+@keyframes animacion3{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(10);
+    }
+}
+@keyframes animacion4{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animacion5{
+    0%{
+        
+    }
+    100%{
+    color: white;
+    background-color: blue;
+    border-style: dashed;
+    }
+}
+@keyframes animacion6{
+    33%{
+        transform: translate(calc((600px) - 400px), 350px);
+     }
+     50%{
+         background-color: rgb(197, 31, 31)
+     }
+     66%{
+        transform: translate(calc((600px) - 200px), 0px);
+     }
+     100%{
+        transform: translate(calc((600px) - 50px), 350px);
+         }
+      }
